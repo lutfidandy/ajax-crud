@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Insert data in MySQL database using Ajax</title>
+	<title>Add Data</title>
+	<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/9585/9585004.png" type="image/icon type">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
