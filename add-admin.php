@@ -1,6 +1,8 @@
 <?php 
 
-       
+          $password = $_POST['password'];
+          $password_regex = '/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*()_+-=]).{8,}$/';
+      
 
         //koneksi database
         $conn = mysqli_connect("localhost","root","", "school");
@@ -19,6 +21,12 @@
                   window.location="signup.php";
                   </script>';
                   exit();
+        }elseif(!preg_match($password_regex, $password)){
+          echo '<script language="javascript">
+          alert ("requires the password to be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character !");    
+          window.location="signup.php";
+          </script>';
+          exit();
         }
     
         //input ke database
